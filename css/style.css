@@ -1,0 +1,85 @@
+/*------------------css reset-----------------*/
+*{
+padding:0;
+margin: 0;
+font-family:100%;
+line-height:1em;
+}
+
+/*-----------*/
+body{background-color: skyblue}
+
+.yellow{width: 100%;
+margin-top: 100px;
+background-color: lightgoldenrodyellow;
+height: 30vh}
+
+h1{text-align: center;
+background-color: white;
+    font-size: 5em;
+    font-family: krungthep;
+    }
+.board{ margin-top: 50px;
+    margin: auto;left: 0;
+    right: 0;
+    background-color: darkseagreen;
+border: 10px;
+    border-style: solid;
+border-color: darkgreen;
+width: 60%;
+    
+min-height: 45vh;}
+li{color: white;
+text-align: center;
+list-style: none;}
+
+.element{margin-top:1em;
+    min-width: 70px;
+    padding: .5em;
+    font-size: 2em;
+    height: 70px;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    margin: 10px;
+    
+}
+
+.flex-board{display: flex;
+flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-item{max-width: 400px;}
+
+.proffessor{position: absolute;
+right:8em;
+top:15em;}
+
+.table{z-index: 2;
+    border-bottom: 100px solid brown;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+    margin-top: -8em
+  
+	}
+
+	.table2{
+	
+	height: 100vh;
+	background: brown;
+}
+			
+.book{z-index: 3;
+    margin: auto;
+    width: 85%;
+    border-bottom: 50px solid red;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	height: 0;
+    margin-top: -5em}
+.book2{z-index: 3;
+	height: 100vh;
+	background: red;}
+

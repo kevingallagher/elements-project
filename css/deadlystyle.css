@@ -1,0 +1,95 @@
+/*------------------css reset-----------------*/
+*{
+padding:0;
+margin: 0;
+font-family:100%;
+line-height:1em;
+}
+
+body{;
+    width: 100%;
+    height:100vh;
+    background-image: url("../image/BACKGROUND.png");
+        overflow-y: hidden;
+}
+    
+.skeleton{margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+position: absolute;
+transform: scale(0.6);
+    width:1000px;
+bottom:-12%;}
+img{margin: auto 0;}
+
+.atom{position: fixed;
+top:2em;
+right:0.1em}
+.flask{position: fixed;
+top:16em;
+right: .1em}
+.small{position: fixed;
+top:9em;}
+
+.nav{ position: absolute;text-align: center;
+margin: 25% 0;
+
+    background-color: none;
+display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;
+    align-items: center;
+width: 100%}
+
+li { 
+list-style-type: none;
+    font:rgba(246, 198, 250, 100);
+    font-size: 7em;
+    text-decoration: none!important;
+    list-style: none;
+    color: white;
+    font-family: monospace;border: 5px;
+color: white;
+border-style: solid;
+
+width:200px;
+    background-color: indianred ;
+    -webkit-transition:  0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+.text{margin: 25%;
+}
+
+a{text-decoration: none;
+transition: ease-in-out;
+}
+
+
+.nav li:hover{background-color:gray;
+transition: ease-in-out}
+.nav li:active{transition: ;
+    background-color: deepskyblue;
+border-radius: 15%;}
+.flex-item{}
+
+
+
+h1{margin: auto;
+    left: 0;
+    right: 0;
+text-align: center;
+    margin-top: 7%;
+    position: absolute ;
+    font-family: 'Varela Round', sans-serif;
+    color: indianred;
+    width: 75%;
+    background-color: rgba(255,255,255,0.4);
+    border: 4px;
+z-index:4;font-size: 6em;
+    -webkit-text-stroke: 1px rgba(228, 130, 130, 1);
+}
+
+.element{ width: 40%;}
+
