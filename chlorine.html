@@ -22,7 +22,7 @@
             <li><a href="chlorine.html"><img src="image/clbutton.png"/></a></li>
         </ul>
         
-        <section>
+        <section id="top">
             <div class="container">
             <div class="left chlorine">
             
@@ -41,9 +41,9 @@
             </div>
             
             
-            <div id="top" class="right">
+            <div class="right">
             
-            <h1 class="title"> Chlorine</h1>
+            <h1 class="title"> CHLORINE - Cl</h1>
              
                 
                 <img class="atom" src=image/chlorineatom.png />
@@ -53,10 +53,10 @@
                 <h2 class="sub-heading">Facts</h2>
                 <ul class="fact-list">
             
-                    <li> Atomic Number: 17 </li>
-                    <li> State: Gas </li>
-                    <li> Name History: Greek for greenish yellow </li>
-                    <li> Danger: Highly reactive and toxic  </li>
+                    <li> <strong>Atomic Number</strong>: 17 </li>
+                    <li> <strong>State</strong>: Gas </li>
+                    <li> <strong>Name History</strong>: Greek for greenish yellow </li>
+                    <li> <strong>Danger</strong>: Highly reactive and toxic  </li>
                 
                 </ul>
                 
@@ -71,8 +71,7 @@
               <div class="deadlyfact">
             <h1>Deadly Fact</h1>
                     <p>
-                        Symptoms of Lead poisoning are varied. They may affect many parts of the body. Since a child’s brain is still developing, lead can lead to intellectual disability. High exposure to lead may lead to severe abdominal pain, cramping,
-vomiting and even send a person into a coma.
+                     In World War 1, Chlorine gas was used as a chemical weapon. It was said that a goolish green gas lingered over the battle zone. Many soilders died from suffication were others where left with there lungs buning from the toxic gas.
                     </p>
                 </div>
          
@@ -80,9 +79,29 @@ vomiting and even send a person into a coma.
         
         </section>
         
+                 </section>
+        
+   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+   
+        <script>
+              $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});  
+                
+        </script>
+            
     </body>
 </html>
         
         
-    </body>
-</html>

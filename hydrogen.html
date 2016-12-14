@@ -21,7 +21,7 @@
             <li><a href="chlorine.html"><img src="image/clbutton.png"/></a></li>
         </ul>
         
-        <section>
+        <section id="top">
             <div class="container">
             <div class="left hydrogen">
             
@@ -39,9 +39,9 @@
             </div>
             
             
-            <div id="top" class="right">
+            <div class="right">
             
-            <h1 class="title"> Hydrogen</h1>
+            <h1 class="title"> HYDROGEN - H</h1>
            
                 
                 <img class="atom" src=image/hydrogenatom.png />
@@ -50,10 +50,10 @@
                 <div class="fact-background">
                 <h2 class="sub-heading">Facts</h2>
                 <ul class="fact-list">
-                      <li> Atomic Number: 1 </li>
-                    <li> State: Gas </li>
-                    <li> Name History: Means water forming </li>
-                    <li> Danger: Highly Flamable </li>
+                    <li> <strong>Atomic Number</strong>: 1 </li>
+                    <li> <strong>State</strong>: Gas </li>
+                    <li> <strong>Name History</strong>: Means water forming </li>
+                    <li> <strong>Danger</strong>: Highly Flamable </li>
                 
                 </ul>
                 </div>
@@ -65,8 +65,7 @@
               <div class="deadlyfact">
             <h1>Deadly Fact</h1>
                     <p>
-                        Symptoms of Lead poisoning are varied. They may affect many parts of the body. Since a child’s brain is still developing, lead can lead to intellectual disability. High exposure to lead may lead to severe abdominal pain, cramping,
-vomiting and even send a person into a coma.
+                        Hydrogen is the lightest and most abundent element in the universe. For this reason it can be used to float huge air ships, however it is also very flamable, one spark would ignite the entire balloon.
                     </p>
                 </div>
          
@@ -74,11 +73,30 @@ vomiting and even send a person into a coma.
         
         </section>
         
-             
+                  </section>
+        
+   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+   
+        <script>
+              $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});  
+                
+        </script>
     
           </body>
+            
 </html>
         
         
-    </body>
-</html>

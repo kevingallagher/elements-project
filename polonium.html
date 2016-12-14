@@ -21,7 +21,7 @@
             <li><a href="chlorine.html"><img src="image/clbutton.png"/></a></li>
         </ul>
         
-        <section>
+        <section id="top">
             <div class="container">
             <div class="left polonium">
             
@@ -39,9 +39,9 @@
             </div>
             
             
-            <div id="top" class="right">
+            <div class="right">
             
-            <h1 class="title"> Polonium</h1>
+            <h1 class="title"> POLONIUM - Po</h1>
              
                 
                 <img class="atom" src=image/poloniumatom.png />
@@ -52,10 +52,11 @@
                 <div class="facts">
                 <h2 class="sub-heading">Facts</h2>
                 <ul class="fact-list">
-                <li> Atomic Number: 84 </li>
-                    <li> State: Solid extracted from Uranium </li>
-                    <li> Name History: Named after Marie Curies native homeland </li>
-                    <li> Danger: Highly Radioactive </li>
+                    <li> <strong>Atomic Number</strong>: 84 </li>
+                    <li> <strong>State</strong>: Solid  </li>
+                    <li> <strong>Name History</strong>:Marie Curies native homeland Poland
+                    </li>
+                    <li> <strong>Danger</strong>: Highly Radioactive </li>
                 
                 </ul>
                 </div>
@@ -69,8 +70,7 @@
                <div class="deadlyfact">
             <h1>Deadly Fact</h1>
                     <p>
-                        Symptoms of Lead poisoning are varied. They may affect many parts of the body. Since a child’s brain is still developing, lead can lead to intellectual disability. High exposure to lead may lead to severe abdominal pain, cramping,
-vomiting and even send a person into a coma.
+                        Polonium was discovered by Marie Curie. it is the haviest natuarlly occurying radioactive element. It is also the most radioactive. Alpha particles radiated from this element can mutate the DNA of your cells causing them to mulitply. Exposure may casue tumours to form.
                     </p>
                 </div>
          
@@ -78,10 +78,28 @@ vomiting and even send a person into a coma.
         
         </section>
         
+                     </section>
+        
+   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+   
+        <script>
+              $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});  
+                
+        </script>
              
           </body>
 </html>
         
-        
-    </body>
-</html>
