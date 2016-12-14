@@ -45,32 +45,34 @@ background-color:rgba(203,93,94,1);
 color: white;
 transition: 0.1s;}
 
-.element-nav{z-index: 4;position: absolute;right: 0;
+.element-nav{z-index: 4;position: absolute;right: -1.8em;
+    top:5.8em;
 list-style: none;
 padding-top: 0.5em;
  
 }
+.element-nav li{padding: 0;}
 .element-nav img{transform: scale(0.5)}
-.element-nav a{opacity: 0.7;}
+.element-nav a{opacity: 0.5;}
 .element-nav a:hover{opacity: 1}
 
 .element-nav a:active{opacity: 1}
 
 .container{display: flex;
 flex-wrap: wrap-reverse;
-    
-flex-grow: ;}
+    width: 100%;
+    }
 
 .left.mercury{background-image: url(../image/palace.png) ;
-background-size: ;}
+background-size:;}
 .left.polonium{background-image: url(../image/lad.png);
 background-position: top  ;
 background-size: ;}
 .left.hydrogen{background-image: url(../image/sky.png);
-background-size: contain;
+background-size: ;
 background-position: top }
 .left.lead{background-image: url(../image/room.png);
-background-size: ;
+background-size:contain;
 background-position: top }
 .left.chlorine{background-image: url(../image/gas.png);
 background-size:auto;
@@ -79,38 +81,39 @@ background-position: top }
 
 .left{
 background-position: bottom  ;
-width: 49.2%;
-border-right:10px;
-border-right-style: dashed;
-    border-color: white;
+width: 50%;
+border-right:10px;;
 }
 
 .right{width:50% ;
-    background-image: url(../image/splashbackground.png);
+    
     background-attachment: fixed;
-    height: 100vh;
-background-color:;}
+    height: 100vh;}
 
-.element{ width: 49%;
+.element{ width: 50%;
 position: fixed;
 z-index: 2;
 bottom: 0;}
 .element-background{width: 50%;position: fixed;z-index: 1;
 }
 
-.facts{background-color: rgba()}
-.title{color: gray;
+.sub-heading{padding: 1em;
+    margin-top: 1em}
+
+h1{font-family: 'Varela Round', sans-serif;}
+
+.title{color: white;
     position: fixed;
     width: 50%;
     z-index: 2;
     text-align: center;
-font-family: 'Varela Round', sans-serif;
     font-size: 3em;
-background-color:white;
+background-color:indianred;
 padding-top:1em;
 padding-bottom: .5em;
     border-bottom: 5px lightgrey; 
 border-bottom-style: solid }
+
 .symbol{position: absolute;
     margin: 25%;
     right:.1%;
@@ -124,7 +127,6 @@ display: block;
 }
 
 h2{color: gray;
-    margin-top: 1em;
     text-align: center;
 text-transform: uppercase;
 font-family: 'Varela Round', sans-serif;}
@@ -137,7 +139,7 @@ margin-top: 1em;
 font-size:1.3em;
 font-family: 'Varela Round', sans-serif;}
 
-.pic-title{ font-family: monospace;
+.pic-title{ font-family: Filson soft;
     width: 60%;
     left: 0;
    right:0;
@@ -145,11 +147,37 @@ font-family: 'Varela Round', sans-serif;}
 text-align: center;
 font-size: 2em;
 padding: 1em;
-    border:10px;
-border-style:dashed;
-border-color: white}
-        
+}
+.fact-list{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+width: 100%;
+height:150px}
+li{font-family: Filson soft  ;
+    color: grey;
+    list-style: none;
+    padding: 1.5em
+}
+.fact-background{background-image: url(../image/splashbackground.png);
+    border: 4px;
+    width: 80%;
+    margin:auto;
+border-style: solid;
+border-radius: 25px;
+border-color:indianred;}
 
+.deadlyfact{margin-top: 13em;
+    margin-left: 1em;
+   
+    height:35%;
+width: 60%;
+background-color: indianred;
+border-radius: 25px;
+text-align: center;
+}
+
+span{ 
+}
 
 @-webkit-keyframes rotate {
     from {
@@ -159,21 +187,31 @@ border-color: white}
         -webkit-transform: rotate(360deg);
     }
 }
-.atomcontainer{background-color: rgba(255,255,255,0.4)}
+.atomcontainer{ background-color: rgba(255,255,255,0.4)}
 .atom{margin-top: 8em;
     -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 13s; 
+    -webkit-animation-duration: 30s; 
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-left: 2em
+  
 }
 
+.arrow{display: block;
+margin: auto;
+margin-top: .5em;
+transition: 0.2s}
 
-.fact-skeleton{position: fixed;top:300px;
-    right:0;
-    left: 0;
+.arrow:hover{transform: scale(1.1);
+    display: block;
+margin: auto;
+margin-top: .5em}
+
+.fact-skeleton{position: absolute;
+    
+  bottom: 100;
+    right: -22em;
+   
     transform: scale(0.3);
     
 }
