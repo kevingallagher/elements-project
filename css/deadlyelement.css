@@ -70,19 +70,26 @@ flex-wrap: wrap-reverse;
     }
 
 .left.mercury{background-image: url(../image/palace.png) ;
-background-size:;}
+    background-position: top;
+background-size:contain;
+    background-repeat: no-repeat;
+}
 .left.polonium{background-image: url(../image/lad.png);
 background-position: top  ;
-background-size: ;}
+background-size:contain ;
+background-repeat: no-repeat;}
 .left.hydrogen{background-image: url(../image/sky.png);
-background-size: ;
-background-position: top }
+background-size:contain ;
+background-position: top ;
+background-repeat: no-repeat;}
 .left.lead{background-image: url(../image/room.png);
 background-size:contain;
-background-position: top }
+background-position: top ;
+background-repeat: no-repeat;}
 .left.chlorine{background-image: url(../image/gas.png);
-background-size:auto;
-background-position: top }
+background-size:contain;
+background-position: top ;
+background-repeat: no-repeat;}
 
 
 .left{
@@ -109,15 +116,14 @@ h1{font-family: 'Varela Round', sans-serif;}
 
 .title{color: white;
     position: fixed;
+    top: 0;
     width: 50%;
     z-index: 2;
     text-align: center;
     font-size: 3em;
 background-color:indianred;
 padding-top:1em;
-padding-bottom: .5em;
-    border-bottom: 5px lightgrey; 
-border-bottom-style: solid }
+padding-bottom: .5em;}
 
 .symbol{position: absolute;
     margin: 25%;
@@ -180,12 +186,13 @@ background-color: indianred;
 border-radius: 25px;
 text-align: center;
 }
-.deadlyfact-right{margin-top: 8em;
-    margin-left: 1em;
-   position: absolute;
+.deadlyfact-right{display: block;
+
+    margin: auto;
+    margin-top: 35em;
     height:auto;
     padding: 1em;
-width: 40%;
+width: 60%;
 background-color: indianred;
 border-radius: 25px;
 text-align: center;}
@@ -201,7 +208,7 @@ span{
     }
 }
 .atomcontainer{ background-color: rgba(255,255,255,0.4)}
-.atom{margin-top: 8em;
+.atom{margin-top: em;
     -webkit-animation-name: rotate; 
     -webkit-animation-duration: 30s; 
     -webkit-animation-iteration-count: infinite;
@@ -212,13 +219,13 @@ span{
 
 .arrow{display: block;
 margin: auto;
-margin-top: .5em;
+margin-top:2em;
 transition: 0.2s}
 
 .arrow:hover{transform: scale(1.1);
     display: block;
 margin: auto;
-margin-top: .5em}
+margin-top: 2em}
 
 .arrow-up{display: block;
 margin: auto;
@@ -230,9 +237,10 @@ transition: 0.2s}
 margin: auto;
 margin-top: 12.2em}
 
-.fact-skeleton{position: absolute;
+.fact-skeleton{position: relative;
     
-    transform: scale(0.3);
+    
+    ;
     
 }
 
