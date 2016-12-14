@@ -65,9 +65,7 @@ transition: ease-in-out;
 
 .nav li:hover{background-color:gray;
 transition: ease-in-out}
-.nav li:active{transition: ;
-    background-color: deepskyblue;
-border-radius: 15%;}
+
 .flex-item{}
 
 
