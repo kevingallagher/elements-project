@@ -13,14 +13,7 @@ body{;
         overflow-y: hidden;
 }
     
-.skeleton{margin: auto;
-    left: 0;
-    right: 0;
-    z-index: 2;
-position: absolute;
-transform: scale(0.6);
-    width:1000px;
-bottom:-12%;}
+
 img{margin: auto 0;}
 
 .atom{position: fixed;

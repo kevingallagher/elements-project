@@ -19,7 +19,7 @@ margin: auto;
 left: 0;
 right: 0;
 text-align: center;
-width: 10%;
+width: 5%;
 padding: 0.5em;
 margin-top:1em;z-index: 3;
 background-color: white;
@@ -37,26 +37,32 @@ transition: 0.2s ease-in-out}
 
 a.home-button:hover{text-decoration: none;
 font-family: 'Varela Round', sans-serif;
-background-color: rgba(203,93,94,0.8);
-color: white;}
+background-color: rgba(203,93,94,1);
+color: white;
+border: 4px;
+border-style: solid;
+    border-color: white;
+border-radius: 30px;}
 a.home-button:active{text-decoration: none;
 font-family: 'Varela Round', sans-serif;
 background-color:rgba(203,93,94,1);
 color: white;
 transition: 0.1s;}
 
-.element-nav{z-index: 4;position: absolute;right: -1.8em;
-    top:5.8em;
-list-style: none;
-padding-top: 0.5em;
+.element-nav{display: flex;
+    position:fixed;
+    right: 0;
+    z-index: 4;
+    list-style: none;
+    top: -2em
  
 }
-.element-nav li{padding: 0;}
+.element-nav li{padding:0 ;}
 .element-nav img{transform: scale(0.5)}
 .element-nav a{opacity: 0.5;}
 .element-nav a:hover{opacity: 1}
+.element-nav a:active{}
 
-.element-nav a:active{opacity: 1}
 
 .container{display: flex;
 flex-wrap: wrap-reverse;
@@ -82,7 +88,6 @@ background-position: top }
 .left{
 background-position: bottom  ;
 width: 50%;
-border-right:10px;;
 }
 
 .right{width:50% ;
@@ -97,7 +102,7 @@ bottom: 0;}
 .element-background{width: 50%;position: fixed;z-index: 1;
 }
 
-.sub-heading{padding: 1em;
+.sub-heading{padding: em;
     margin-top: 1em}
 
 h1{font-family: 'Varela Round', sans-serif;}
@@ -131,11 +136,10 @@ h2{color: gray;
 text-transform: uppercase;
 font-family: 'Varela Round', sans-serif;}
 
-p{color: gray;
-    width: 60%;
+p{
+    width: 90%;
     line-height: 1.4em ;
 margin: auto;
-margin-top: 1em;
 font-size:1.3em;
 font-family: 'Varela Round', sans-serif;}
 
@@ -166,16 +170,25 @@ border-style: solid;
 border-radius: 25px;
 border-color:indianred;}
 
-.deadlyfact{margin-top: 13em;
+.deadlyfact{margin-top: 2em;
     margin-left: 1em;
    
-    height:35%;
+    height:auto;
+    padding: 1em;
 width: 60%;
 background-color: indianred;
 border-radius: 25px;
 text-align: center;
 }
-
+.deadlyfact-right{margin-top: 8em;
+    margin-left: 1em;
+   position: absolute;
+    height:auto;
+    padding: 1em;
+width: 40%;
+background-color: indianred;
+border-radius: 25px;
+text-align: center;}
 span{ 
 }
 
@@ -207,11 +220,18 @@ transition: 0.2s}
 margin: auto;
 margin-top: .5em}
 
+.arrow-up{display: block;
+margin: auto;
+margin-top: 12.2em;
+transition: 0.2s}
+
+.arrow-up:hover{transform: scale(1.1);
+    display: block;
+margin: auto;
+margin-top: 12.2em}
+
 .fact-skeleton{position: absolute;
     
-  bottom: 100;
-    right: -22em;
-   
     transform: scale(0.3);
     
 }
