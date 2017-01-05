@@ -23,7 +23,7 @@ margin: auto;
 left: 0;
 top: -30px;
 text-align: center;
-width: 5%;
+width: 60px;
 padding: 0.5em;
 margin-top:1.6em;z-index: 3;
 background-color: white;
@@ -53,9 +53,12 @@ background-color:rgba(203,93,94,1);
 color: white;
 transition: 0.1s;}
 
-.element-nav{display: flex;
-    position:fixed;
-    right: 1.2em;
+.element-nav{display:inline-flex;
+    flex: auto;
+position: fixed;
+
+   width: 50%;
+    right: 0;
     z-index: 4;
     list-style: none;
     top: -2em
@@ -65,7 +68,6 @@ transition: 0.1s;}
 .element-nav img{transform: scale(0.5)}
 .element-nav a{opacity: 0.5;}
 .element-nav a:hover{opacity: 1}
-.element-nav a:active{}
 
 
 .container{display: flex;
@@ -126,6 +128,7 @@ width: 50%;
 background-color:indianred;
 padding-top:0.9em;
 padding-bottom: 0.9em;}
+
 
 .symbol{position: absolute;
     margin: 25%;
@@ -211,7 +214,7 @@ span{
         -webkit-transform: rotate(360deg);
     }
 }
-.atomcontainer{ background-color: rgba(255,255,255,0.4)}
+.atomcontainer{ background-color: rgba(255,255,255,0)}
 .atom{
     -webkit-animation-name: rotate; 
     -webkit-animation-duration: 30s; 
@@ -250,19 +253,72 @@ margin-top: 3em}
 }
 
 
-@media only all and (max-width: 600px) {
+@media only all and (max-width: 700px) {
     .left{
-        width: 50%;
-        max-width: none;
-        background-color: salmon;
+        width: 100%;
+        
     }
-    .right{width:50%;
+    .right{width:100%;
     max-width: none;}
     
-	.left {background-image: url(../image/splashbackground.png);
-				border-right: none;
-      	border-bottom: 1px solid #2f2f2f;
-	}
+    .element{position: absolute;
+    width: 100%;
+    margin: auto;
+    top: }
+    .title{color: white;
+    position: fixed;
+    top: 0;
+width: 100%;
+    z-index: 2;
+    text-align: center;
+    font-size: 3em;
+background-color:indianred;
+padding-top:0.9em;
+padding-bottom: 0.9em;}
+    .left.mercury{background-image: url(../image/palace.png) ;
+    background-position: top;
+    background-attachment: cover;
+    background-repeat: no-repeat;
+}
+.left.polonium{background-image: url(../image/lad.png);
+background-position: top  ;
+background-size:cover ;
+background-repeat: no-repeat;}
+.left.hydrogen{background-image: url(../image/sky.png);
+background-size:cover ;
+background-position: top ;
+background-repeat: no-repeat;}
+.left.lead{background-image: url(../image/room.png);
+background-size:cover;
+background-position: top ;
+background-repeat: no-repeat;}
+.left.chlorine{background-image: url(../image/gas.png);
+background-size:contain;
+background-position: cover ;
+background-repeat: no-repeat;}
+    
+.fact-background{background-image: url(../image/splashbackground.png);
+    border: 4px;
+    width: 80%;
+    margin:auto;
+    margin-top: 1em;
+border-style: solid;
+border-radius: 25px;
+    background-color: white;
+border-color:indianred;}
+    .element-nav{display:inline-flex;
+    flex: auto;
+
+    position:absolute;
+   width: 100%;
+    right: 0;
+    z-index: 4;
+    list-style: none;
+    top: -2em
+ 
+}
+}
+
 
 }
 
